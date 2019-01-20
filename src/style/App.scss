@@ -20,6 +20,14 @@ body,
   h1 {
     color: rgba(0, 0, 0, 0.3);
   }
+
+  .menu-toggle {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    height: 50px;
+  }
 }
 
 #footer .icons a {
@@ -47,13 +55,38 @@ body,
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.category ul {
+.list ul {
   list-style: none;
+  margin: 0;
+
+  a:hover {
+    font-weight: bold;
+  }
+
+  .category {
+    // visibility: hidden;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+
+    &.active {
+      display: block;
+      // visibility: visible;
+      opacity: 1;
+    }
+  }
 }
 
 @media screen and (max-width: 980px) {
   #header {
     width: 100%;
+    min-height: 100%;
+    height: auto;
+    text-align: center;
+
+    .menu-toggle {
+      display: block;
+    }
   }
 
   .body-container {
@@ -64,5 +97,11 @@ body,
   .division {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  ul,
+  li,
+  ul > li {
+    padding-left: 0;
   }
 }

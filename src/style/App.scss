@@ -20,6 +20,13 @@ body,
   h1 {
     color: rgba(0, 0, 0, 0.3);
   }
+
+  .menu-toggle {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0;
+  }
 }
 
 #footer .icons a {
@@ -47,13 +54,56 @@ body,
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.category ul {
+.list ul {
   list-style: none;
+  margin: 0;
+
+  a:hover {
+    font-weight: bold;
+  }
+
+  .list {
+    min-height: 28px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 1s;
+
+    &.active {
+      height: auto;
+      max-height: 280px;
+    }
+  }
 }
 
 @media screen and (max-width: 980px) {
   #header {
+    height: 0;
+    max-height: 0;
+    overflow: hidden;
+    padding: 70px 0 0 0;
     width: 100%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+
+    .menu-toggle {
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    &.active {
+      height: 100%;
+      max-height: 100%;
+      padding: 4.5em 1.5em;
+      transition: all 0.3s ease-in-out;
+
+      .menu-toggle {
+        transform: rotate(-540deg);
+      }
+    }
+
+    #footer {
+      padding: 0;
+    }
   }
 
   .body-container {
@@ -64,5 +114,11 @@ body,
   .division {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  ul,
+  li,
+  ul > li {
+    padding-left: 0;
   }
 }

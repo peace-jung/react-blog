@@ -1,20 +1,24 @@
 import React from "react";
-// import { Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Layout from "Components/Layout";
 import Main from "Components/Main";
+import About from "Components/About";
 
 const AppPresenter = () => {
-  return (
-    // <div className="body-container">
-    <Layout>
-      {/* <Switch>
-        <Route />
-        </Switch> */}
+  const page404 = () => <div>404</div>;
 
-      <div id="main">
-        <Main />
-      </div>
-    </Layout>
+  return (
+    <BrowserRouter>
+      <Layout>
+        <div id="main">
+          <Switch>
+            <Route exact path="/" component={Main} />
+            <Route path="/about" component={About} />
+            <Route path="*" component={page404} />
+          </Switch>
+        </div>
+      </Layout>
+    </BrowserRouter>
   );
 };
 

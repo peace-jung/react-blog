@@ -25,10 +25,8 @@ class HeaderContainer extends Component {
   };
 
   // 메뉴 토글 버튼 클릭 시
-  handleToggleClass = e => {
-    if (e.target.classList[0] === "icon") {
-      this.setState({ isProfileActive: !this.state.isProfileActive });
-    }
+  handleToggleClass = () => {
+    this.setState({ isProfileActive: !this.state.isProfileActive });
   };
 
   render() {

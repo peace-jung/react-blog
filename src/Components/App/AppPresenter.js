@@ -8,7 +8,6 @@ const AppPresenter = () => {
   const page404 = () => <div>404</div>;
 
   return (
-    // <div className="body-container">
     <BrowserRouter>
       <Layout>
         <div id="main">

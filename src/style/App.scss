@@ -6,7 +6,7 @@ body,
 
 #header {
   position: relative;
-  width: 300px;
+  width: 400px;
   background: #fff;
 
   & strong {
@@ -75,6 +75,11 @@ body,
   }
 }
 
+@media screen and (max-width: 1800px) {
+  #header {
+    width: 300px;
+  }
+}
 @media screen and (max-width: 980px) {
   #header {
     height: 0;

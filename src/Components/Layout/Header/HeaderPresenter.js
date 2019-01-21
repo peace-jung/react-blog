@@ -55,14 +55,13 @@ const list = [
 
 const HeaderPresenter = props => {
   return (
-    <div
-      id="header"
-      className={props.isProfileActive ? "active" : ""}
-      onClick={e => {
-        props.handleToggleClass(e);
-      }}
-    >
-      <div className="menu-toggle">
+    <div id="header" className={props.isProfileActive ? "active" : ""}>
+      <div
+        className="menu-toggle"
+        onClick={() => {
+          props.handleToggleClass();
+        }}
+      >
         <i className="icon fa-chevron-down">
           <span className="label">Menu</span>
         </i>

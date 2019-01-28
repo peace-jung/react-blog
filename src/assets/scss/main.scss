@@ -1039,8 +1039,8 @@ input[type="button"],
 
   > section {
     border-top: solid 2px _palette(border);
-    margin: $size-header-pad 0 0 0;
-    padding: $size-header-pad 0 0 0;
+    // margin: $size-header-pad 0 0 0;
+    // padding: $size-header-pad 0 0 0;
 
     &:first-child {
       border-top: 0;

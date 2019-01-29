@@ -1,0 +1,30 @@
+.markdown {
+  color: #000;
+  word-break: break-all;
+
+  h1 {
+    font-weight: 700;
+    border-bottom: #888 dotted 1px;
+  }
+
+  ul {
+    padding-left: 1em;
+  }
+
+  li,
+  ul > li {
+    padding-left: 0.5em;
+  }
+
+  pre code {
+    background: #2d2d2d;
+    border-radius: 0;
+    border: 0;
+    color: #ddd;
+  }
+
+  code {
+    color: #eb6900;
+    background-color: #f7f7f7;
+  }
+}

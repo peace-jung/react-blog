@@ -5,8 +5,12 @@ import "style/App.scss";
 
 class PostContainer extends Component {
   render() {
-    // console.log(this.props);
-    return <PostPresenter />;
+    const {
+      location: { pathname }
+    } = this.props;
+    const path = pathname.split("/");
+
+    return <PostPresenter path={path} />;
   }
 }
 

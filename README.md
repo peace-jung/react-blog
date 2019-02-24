@@ -1,14 +1,16 @@
 # React Blog
 
-Building...
+Developing...
 
 ## Usage
 
 create-react-app
+Next.js
 
 ## Run
 
-`npm start`
+`yarn build`
 
-`npm run build`
+`yarn start`
 
+`yarn dev`

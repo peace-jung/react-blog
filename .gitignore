@@ -26,3 +26,5 @@ yarn-error.log*
 
 # next.js
 .next
+# next production
+/out

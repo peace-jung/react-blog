@@ -11,6 +11,7 @@ app
     const server = express();
 
     server.get("*", (req, res) => {
+      res.setHeader("Cache-Control", "public, max-age=86400, immutable");
       return handle(req, res);
     });
 

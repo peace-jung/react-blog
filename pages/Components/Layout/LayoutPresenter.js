@@ -5,7 +5,6 @@ export default ({ children }) => (
   <div className="body-container">
     <Head>
       <title>Peace Code</title>
-      <meta httpEquiv="Cache-Control" content="no-cache" />
       <meta
         name="viewport"
         content="initial-scale=1.0, width=device-width"

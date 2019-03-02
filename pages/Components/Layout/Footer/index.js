@@ -1,2 +1,2 @@
-import FooterContainer from "./FooterContainer";
-export default FooterContainer;
+import FooterPresenter from "./FooterPresenter";
+export default FooterPresenter;

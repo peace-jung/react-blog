@@ -1,7 +1,6 @@
-import React, { Component } from "react";
 import Presenter from "./Presenter";
 
-export default class Container extends Component {
+export default class Container extends React.Component {
   render() {
     return <Presenter />;
   }

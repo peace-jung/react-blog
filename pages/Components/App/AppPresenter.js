@@ -3,10 +3,8 @@ import Layout from "../Layout";
 
 export default () => (
   <Layout>
-    <div id="main">
-      <Link href="/about">
-        <a>About Page</a>
-      </Link>
-    </div>
+    <Link href="/about">
+      <a>About Page</a>
+    </Link>
   </Layout>
 );

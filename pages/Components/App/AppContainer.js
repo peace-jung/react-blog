@@ -1,7 +1,6 @@
-import React, { Component } from "react";
 import AppPresenter from "./AppPresenter";
 
-export default class AppContainer extends Component {
+export default class AppContainer extends React.Component {
   render() {
     return <AppPresenter />;
   }

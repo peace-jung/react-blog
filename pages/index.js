@@ -1,5 +1,5 @@
 import Layout from "./Components/Layout";
 
-const index = <div>sfjlsdklf</div>;
+const index = <div>Welcome.</div>;
 
 export default () => <Layout>{index}</Layout>;

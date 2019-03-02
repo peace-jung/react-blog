@@ -9,7 +9,7 @@ module.exports = withImages(
       cssLoaderOptions: {
         url: false
       },
-      exportPathMap: () => {
+      exportPathMap: async defaultPathMap => {
         return {
           "/": { page: "/" },
           "/about": { page: "/about" },
